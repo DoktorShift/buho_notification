@@ -75,7 +75,7 @@ def format_auth_event(data: dict) -> str:
 # -----------------------------------------------------------------------------
 # Webhook Endpoint
 # -----------------------------------------------------------------------------
-@app.route("/notifications-telegram", methods=["POST"])
+@app.route("/notifications", methods=["POST"])
 def handle_telegram_notification():
     data = request.get_json()
 
