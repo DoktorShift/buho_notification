@@ -218,14 +218,5 @@ here’s the **dev-facing contract** for what Buho must POST to each service so 
 * Nostr: `recipient` (npub or 64-hex), optional `cipher`, optional `relays`
 * Email: `recipient` (string) or `recipients` (array), optional `cc`, `bcc`
 
----
 
-# Quick sanity checklist for Buho
-
-* Always include `type`.
-* Provide the **channel’s routing key** required for that script.
-* For `payment`, include: `direction`, `amount`, `wallet_name`, `memo`, `timestamp`.
-* For `auth`, include: `account_name`, `ip`, `timestamp`.
-
-If you want, I can also ship these as **JSON Schemas** (\*.schema.json) for validation on Buho’s side.
 
